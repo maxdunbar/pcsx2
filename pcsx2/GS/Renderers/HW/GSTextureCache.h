@@ -221,6 +221,9 @@ public:
 		GSVector4i m_drawn_since_read{};
 		u32 m_valid_bits = 0;
 		int readbacks_since_draw = 0;
+		bool used_for_source = false;
+		u32 source_linked_end = 0;
+		u32 source_linked_bp = 0;
 
 	public:
 		Target(const GIFRegTEX0& TEX0, const int type);
